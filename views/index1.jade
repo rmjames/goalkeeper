@@ -1,0 +1,40 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title DailyPlanner
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='stylesheets/screen.css')
+  body
+    .container
+      .main
+        header.cf
+          ul.hdr
+            li.schedule
+              a(href='#', data-icon='&#x21;')
+            li.add
+              a(href='#', data-icon='&#x26;')
+            li#rt
+              a.setting(href='#', data-icon='&#x22;')
+        .input.gn
+          form
+            input#inputText(type='text', name='input', placeholder='Enter Appt')
+            input#inputButton(type='submit')
+        // input
+        .settingLinks.gn.cf
+          ul#sets rt
+            li(data-icon='&#x24;')
+            li(data-icon='&#x27;')
+        // settingLinks
+        .weather
+        // weather
+        .appt
+          ul(#list)
+        // appt
+      // main
+    // container
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js')
+    script(type='text/javascript', src='javascripts/main.js')

@@ -1,0 +1,240 @@
+/* line 17, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 19, ../sass/screen.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 36, ../sass/screen.scss */
+.cf:before,
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 42, ../sass/screen.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 48, ../sass/screen.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 53, ../sass/screen.scss */
+.container .main {
+  width: 99%;
+}
+
+/* line 56, ../sass/screen.scss */
+.weather {
+  margin-top: .35em;
+  height: 8em;
+  z-index: 9999;
+  -webkit-border-radius: 1px 1px;
+  -moz-border-radius: 1px / 1px;
+  border-radius: 1px / 1px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 65, ../sass/screen.scss */
+.appt {
+  margin-top: .35em;
+  height: 28em;
+  width: 100%;
+  -webkit-border-radius: 1px 1px;
+  -moz-border-radius: 1px / 1px;
+  border-radius: 1px / 1px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 75, ../sass/screen.scss */
+header {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 79, ../sass/screen.scss */
+li {
+  float: left;
+  margin-right: 0.25em;
+  margin-top: .2em;
+  padding-bottom: 1.3em;
+  padding-top: 1.3em;
+  padding-right: 2em;
+  padding-left: 2em;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px / 2px;
+  border-radius: 2px / 2px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 93, ../sass/screen.scss */
+form {
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+/* line 98, ../sass/screen.scss */
+input {
+  height: 2.5;
+  padding: 1.2em;
+  -webkit-border-radius: 1px 1px;
+  -moz-border-radius: 1px / 1px;
+  border-radius: 1px / 1px;
+}
+
+/* line 104, ../sass/screen.scss */
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 110, ../sass/screen.scss */
+#rt {
+  float: right;
+}
+
+/* line 114, ../sass/screen.scss */
+.gn {
+  display: none;
+}
+
+/* line 118, ../sass/screen.scss */
+body li {
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+/*:hover {
+  color: #666;
+}*/
+/* line 127, ../sass/screen.scss */
+li.completed {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* line 132, ../sass/screen.scss */
+a.remove {
+  color: red;
+  margin-left: 10px;
+  display: none;
+}
+
+/* line 137, ../sass/screen.scss */
+li:hover a.remove {
+  display: inline;
+}
+
+/* line 141, ../sass/screen.scss */
+#sets li {
+  position: absolute;
+  right: 0;
+  padding-left: .4em;
+  display: block;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px / 2px;
+  border-radius: 2px / 2px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+@media (min-width: 40em) {
+  /* line 162, ../sass/screen.scss */
+  form {
+    margin-left: 3%;
+  }
+}
