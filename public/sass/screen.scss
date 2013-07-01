@@ -139,16 +139,14 @@ li:hover a.remove {
 }
 
 #sets li{
-	position: absolute;
-	right: 0;
-	//margin-left: 70%;
-	//margin-top: .5em;
-	//padding-bottom: .7em;
-	//padding-top: .7em;
+	position: relative;
+	margin-left: 70%;
+	margin-top: .5em;
+	padding-bottom: .7em;
+	padding-top: .7em;
 	//padding-right: .5em;
 	padding-left: .4em;
 	//background: $grey;
-	display: block;
 	@include border-radius(2px, 2px); 
 	@include single-box-shadow;
 	}

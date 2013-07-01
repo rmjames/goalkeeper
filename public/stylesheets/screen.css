@@ -220,10 +220,12 @@ li:hover a.remove {
 
 /* line 141, ../sass/screen.scss */
 #sets li {
-  position: absolute;
-  right: 0;
+  position: relative;
+  margin-left: 70%;
+  margin-top: .5em;
+  padding-bottom: .7em;
+  padding-top: .7em;
   padding-left: .4em;
-  display: block;
   -webkit-border-radius: 2px 2px;
   -moz-border-radius: 2px / 2px;
   border-radius: 2px / 2px;
@@ -233,7 +235,7 @@ li:hover a.remove {
 }
 
 @media (min-width: 40em) {
-  /* line 162, ../sass/screen.scss */
+  /* line 160, ../sass/screen.scss */
   form {
     margin-left: 3%;
   }
