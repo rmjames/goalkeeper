@@ -1,12 +1,4 @@
-$('#rt').click(function(){
-  $('.settingLinks').slideToggle('easing');
-});
-
-$('.add').click(function(){
-  $('.input').slideToggle('easing');
-});
-
-$('inputText').click(function(){
+$('inputText').on('click',function(){
   $('inputText').datepicker();
 });
 
@@ -39,3 +31,19 @@ $('#list').on('click', 'a.remove', function(){
 });
 
 //$('#result').load('ajax/test.html #container');
+
+
+/*
+  Slidemenu
+*/
+(function() {
+	var body = document.body
+	, menu_trigger = body.getElementsByClassName('menu-trigger')[0];
+
+	if ( typeof menu_trigger !== 'undefined' ) {
+		menu_trigger.addEventListener('click', function() {
+			body.className = ( body.className == 'menu-active' )? '' : 'menu-active';
+		});
+	}
+
+}).call(this);

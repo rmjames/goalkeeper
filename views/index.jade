@@ -8,24 +8,27 @@ html
     meta(name='viewport', content='width=device-width', initial-scale="1.0")
     link(rel='stylesheet', href='stylesheets/screen.css')
   body
-    .container
+    .container#content
       .main
         header.cf
-          ul.hdr
-            li.schedule
-              a(href='#', data-icon='!')
-            li.add
-              a(href='#', data-icon='&')
-            li#rt
-              a.setting(href='#', data-icon='"')
-        .input.gn
+          nav#slide-menu
+            ul
+              li.schedule
+                a(href='#', data-icon='!')
+              li.add
+                a(href='#', data-icon='&')
+              li
+                a.setting(href='#', data-icon='"')
+              li
+                a(data-icon='$')    
+              li
+                a(data-icon='"') 
+        .menu-trigger
+          img(src="/images/hamburger_dark.svg")        
+        .input
           form
             input#inputText(type='text', name='input', placeholder='Enter Appt')
             input#inputButton(type='submit')
-        .settingLinks.gn.cf
-          ul#sets 
-            li(data-icon='$')    Profile
-            li(data-icon='"')    Setting
         .weather
         .appt
           ul#list

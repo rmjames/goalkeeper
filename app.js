@@ -30,6 +30,22 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
+/*var forecast = new Forecast({
+    service: 'forecast.io'
+  , key: 'adeacb50ac56539da9a5c4d5f7cf602a'
+  , units: 'celcius' // Only the first letter is parsed so you can type Fahrenheit, Celcius, centigrade, FahrenPoop, etc.
+  , cache: true      // Cache API requests?
+  , ttl: {           // How long to cache requests. Uses syntax from moment.js: http://momentjs.com/docs/#/durations/creating/
+        minutes: 27
+      , seconds: 45
+    }
+});
+
+forecast.get([-33.8683, 151.2086], function(err, weather) {
+  if(err) console.dir(err);
+  else console.dir(weather);
+});*/
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
