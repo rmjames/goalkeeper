@@ -34,4 +34,3 @@ html
           ul#list
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
     script(type='text/javascript', src='/javascripts/main.js')
-    script(type='text/javascript', src='/javascripts/grid.min.js')
