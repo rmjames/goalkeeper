@@ -14,17 +14,17 @@ html
           nav#slide-menu
             ul
               li.schedule
-                a(href='#', data-icon='')
+                a(href='#', data-icon='6') Schedule
               li.add
-                a(href='#', data-icon='')
+                a(href='#', data-icon='0') Add
               li
-                a.setting(href='#', data-icon='')
+                a(href='#', data-icon='3') Music  
               li
-                a(href='#', data-icon='')    
-              li
-                a(href='#', data-icon='') 
+                a(href='#', data-icon='7') location
+              li.setting.sep
+                a(href='#', data-icon='8') Settings
         .menu-trigger
-          a(href='#', data-icon='')        
+          a(href='#', data-icon='!')        
         .input
           form
             input#inputText(type='text', name='input', placeholder='Enter Appt')
@@ -33,5 +33,6 @@ html
         .appt
           ul#list
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
-    script(type='text/javascript', src='/javascripts/main.js')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/main.js')    
     script(type='text/javascript', src='/javascripts/grid.min.js')

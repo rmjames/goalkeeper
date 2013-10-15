@@ -79,8 +79,7 @@ html {
   font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 20, ../sass/_fonts.scss */
+/* line 18, ../sass/_fonts.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -89,6 +88,16 @@ html {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 12px;
+  text-align: center;
+  font-variant: normal;
+  font-size: .95em;
+  text-transform: none;
+  line-height: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -175,39 +184,37 @@ a {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 .appt {
   margin: 0 auto;
   padding-top: 1em;
   max-width: 20em;
   @inclusde border-radius(1px, 1px);
 }
-/* line 60, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 .appt li {
   max-width: 17em;
-  margin: 0.25em;
+  margin: 0.25em auto;
   padding: 1.3em 2em 1.3em 2em;
-  background: yellow;
+  background: rgba(43, 59, 166, 0.05);
   text-align: center;
-  -webkit-border-radius: 2px 2px;
-  -moz-border-radius: 2px / 2px;
-  border-radius: 2px / 2px;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  border-bottom: 1px solid #6b7b8d;
+  -webkit-border-radius: 2px 3px;
+  -moz-border-radius: 2px / 3px;
+  border-radius: 2px / 3px;
 }
-/* line 70, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 .appt li.completed {
   color: red;
   text-decoration: line-through;
 }
-/* line 74, ../sass/_base.scss */
+/* line 75, ../sass/_base.scss */
 .appt a.remove {
   color: red;
   margin-left: 10px;
   display: none;
 }
-/* line 79, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 .appt li:hover a.remove {
   display: inline;
 }
@@ -219,7 +226,7 @@ a {
 nav#slide-menu {
   position: fixed;
   top: 0;
-  left: -100px;
+  left: -300px;
   bottom: 0;
   display: block;
   float: left;
@@ -233,71 +240,37 @@ nav#slide-menu {
 /* line 20, ../sass/_state.scss */
 nav#slide-menu > ul {
   display: block;
-  margin: 40px;
+  margin: 30px;
   padding: 0;
   list-style: none;
-  opacity: 0.5;
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms;
-  /*
-  li.settings:before { content: '\e803'; }
-  li.logout:before { content: '\e804'; }
-  */
 }
-/* line 31, ../sass/_state.scss */
+/* line 30, ../sass/_state.scss */
 nav#slide-menu > ul li {
   color: #dfe5eb;
-  padding: 6px 0;
+  padding: .5em 0;
   cursor: pointer;
 }
-/* line 36, ../sass/_state.scss */
+/* line 35, ../sass/_state.scss */
 nav#slide-menu > ul li:hover {
   color: #59e9df;
 }
-/* line 39, ../sass/_state.scss */
-nav#slide-menu > ul li:before {
-  font-family: "ico";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  color: #59e9df;
-  margin-right: 12px;
-  text-align: center;
-  font-variant: normal;
-  font-size: 0.75em;
-  text-transform: none;
-  line-height: 1em;
-}
-/* line 56, ../sass/_state.scss */
+/* line 38, ../sass/_state.scss */
 nav#slide-menu > ul li.sep {
   margin-top: 7px;
   padding-top: 14px;
   border-top: 1px solid #6b7b8d;
 }
-/* line 63, ../sass/_state.scss */
-nav#slide-menu > ul li.schedule:before {
-  content: "&#x36";
-}
-/* line 64, ../sass/_state.scss */
-nav#slide-menu > ul li.add:before {
-  content: '\e802';
-}
-/* line 65, ../sass/_state.scss */
-nav#slide-menu > ul li.settings:before {
-  content: '\e800';
-}
 
-/* line 74, ../sass/_state.scss */
-body.menu-active nav#slide-menu {
+/* line 47, ../sass/_state.scss */
+.menu-active nav#slide-menu {
   left: 0px;
 }
 
-/* line 75, ../sass/_state.scss */
-body.menu-active nav#slide-menu ul {
+/* line 48, ../sass/_state.scss */
+.menu-active nav#slide-menu ul {
   left: 0px;
   opacity: 1;
 }
@@ -305,7 +278,7 @@ body.menu-active nav#slide-menu ul {
 /*
   Content
 */
-/* line 81, ../sass/_state.scss */
+/* line 54, ../sass/_state.scss */
 div#content {
   position: fixed;
   top: 0;
@@ -316,19 +289,14 @@ div#content {
   overflow: scroll;
   background: #fcfeff;
   border-radius: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  *
-
-	-moz-box-shadow: -3px 0 6px #4a5562;
+  -moz-box-shadow: -3px 0 6px #4a5562;
   -webkit-box-shadow: -3px 0 6px #4a5562;
   box-shadow: -3px 0 6px #4a5562;
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 106, ../sass/_state.scss */
+/* line 73, ../sass/_state.scss */
 div#content div.menu-trigger {
   position: fixed;
   top: 10px;
@@ -340,40 +308,19 @@ div#content div.menu-trigger {
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms;
-  background-image: "images/hamburger_dark.svg";
 }
-/* line 121, ../sass/_state.scss */
-div#content div.menu-trigger:before {
-  background: "../images/hamburger_dark.svg";
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  color: black;
-  font-family: "ico";
-  font-style: normal;
-  font-size: 1.2em;
-  font-weight: normal;
-  font-variant: normal;
-  text-align: center;
-  text-transform: none;
-  line-height: 36px;
-}
-/* line 137, ../sass/_state.scss */
-div#content div.menu-trigger:hover {
-  background: #556270;
-}
-/* line 137, ../sass/_state.scss */
-div#content div.menu-trigger:hover:before {
-  color: #fcfeff;
+/* line 82, ../sass/_state.scss */
+div#content div.menu-trigger a {
+  font-size: 1.15em;
 }
 
-/* line 141, ../sass/_state.scss */
-body.menu-active div#content {
-  left: 280px;
-  border-radius: 7px 0 0 7px;
+/* line 91, ../sass/_state.scss */
+.menu-active div#content {
+  left: 384px;
+  border-radius: 1px 0 0 7px;
 }
 
-/* line 142, ../sass/_state.scss */
-body.menu-active div#content .menu-trigger {
-  left: 284px;
+/* line 92, ../sass/_state.scss */
+.menu-active div#content .menu-trigger {
+  left: 294px;
 }

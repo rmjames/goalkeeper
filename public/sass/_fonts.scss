@@ -4,7 +4,6 @@ html {font-family: source-sans-pro, helvetica, serif;
 			line-height: 1.687em;
 			}
 
-
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot');
@@ -16,7 +15,6 @@ html {font-family: source-sans-pro, helvetica, serif;
 	font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'icomoon';
 	content: attr(data-icon);
@@ -25,9 +23,21 @@ html {font-family: source-sans-pro, helvetica, serif;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	//color: #59e9df;
+	margin-right: 12px;
+	text-align: center;
+	font-variant: normal;
+	font-size: .95em;
+	text-transform: none;
+	line-height: 1em;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 
 $text-shadow: .2px .2px .05px #000;
