@@ -107,7 +107,8 @@ html {
   margin: 0 auto;
   background-color: rgba(243, 156, 18, 0.79);
   padding: 2em;
-  max-width: 20em;
+  max-width: 19em;
+  width: 100%;
   -webkit-border-radius: 1px 1px;
   -moz-border-radius: 1px / 1px;
   border-radius: 1px / 1px;
@@ -116,10 +117,11 @@ html {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 11, ../sass/_forms.scss */
+/* line 12, ../sass/_forms.scss */
 input {
   height: 2.5;
-  padding: 1em;
+  padding: .8em;
+  width: 100%;
   -webkit-border-radius: 1px 1px;
   -moz-border-radius: 1px / 1px;
   border-radius: 1px / 1px;
@@ -226,7 +228,7 @@ a {
 nav#slide-menu {
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -250px;
   bottom: 0;
   display: block;
   float: left;

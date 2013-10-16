@@ -3,13 +3,15 @@
        //background-color: rgba(0, 30, 20, .65);
        background-color: rgba(243, 156, 18,.79);
        padding: 2em;
-       max-width: 20em;
+       max-width: 19em;
+       width: 100%;
        @include border-radius(1px, 1px);
        @include single-box-shadow;
         }
 
 input {
 	   height: 2.5;
-	   padding: 1em;
+	   padding: .8em;
+     width: 100%;
 	   @include border-radius(1px, 1px);
         }
