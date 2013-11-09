@@ -1,6 +1,7 @@
-extend layout
+extends layout
 
-.input
-          form
-            input#inputText(type='text', name='input', placeholder='Enter Appt')
-            input#inputButton(type='submit')
+block content
+	.input
+		form
+			input#inputText(type='text', name='input', placeholder='Enter Appt', autofocus)
+			input#inputButton(type='submit')

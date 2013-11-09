@@ -1,8 +1,19 @@
 
-/*
- * GET home page.
- */
-
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
-};
+module.exports= function(app){
+			app.get('/', function(req,res){
+				res.render('home');
+			});
+			app.get('/input', function(req,res){
+  			res.render('./input',{
+    		title: 'Toolkit'});
+			});
+			app.get('/music', function(req,res){
+				res.render('music')
+			});
+			app.get('/location', function(req,res){
+				res.render('location')
+			});
+			app.get('/settings', function(req,res){
+				res.render('settings')
+			});
+		}

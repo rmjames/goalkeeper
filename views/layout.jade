@@ -1,9 +1,32 @@
-doctype 5
+!!! 5
 html
   head
-    meta (name="viewport" content="width=device-width" charset="utf-8")
-    title DailyPlaner
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title DailyTasks
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width', initial-scale="1.0")
     link(rel='stylesheet', href='stylesheets/screen.css')
   body
-
-    block header 
+    .container
+      .main#content
+        header
+          nav#slide-menu
+            ul
+              li
+                a(href='/', data-icon=',') Home
+              li.schedule
+                a(href='/input', data-icon='$') Schedule
+              li
+                a(href='/music', data-icon='!') Music  
+              li
+                a(href='/location', data-icon='#') location
+              li.setting.sep
+                a(href='/settings', data-icon='&') Settings
+        .menu-trigger
+          a(href='#', data-icon='"') 
+        block content
+           
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
+  //script(src='/javascripts/jquery.js')
+  script(src='/javascripts/main.js', async)
