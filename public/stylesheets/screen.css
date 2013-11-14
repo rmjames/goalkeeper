@@ -128,7 +128,7 @@ input[type=submit] {
 
 /* line 17, ../sass/_forms.scss */
 input {
-  height: 2.5;
+  height: 2.5em;
   padding: .8em;
   width: 100%;
   -webkit-border-radius: 1px 1px;
@@ -194,24 +194,20 @@ a {
 
 /* line 44, ../sass/_base.scss */
 .container {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   margin: 0 auto;
 }
-/* line 38, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
+
+/* line 49, ../sass/_base.scss */
+.card, audio {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 7em;
+  max-width: 22em;
+  background-color: #cccccc;
 }
 
-/* line 50, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .weather {
   z-index: 9999;
   -webkit-border-radius: 1px 1px;
@@ -222,14 +218,16 @@ a {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 .appt {
   margin: 0 auto;
   padding-top: 1em;
   max-width: 20em;
-  @inclusde border-radius(1px, 1px);
+  -webkit-border-radius: 1px 1px;
+  -moz-border-radius: 1px / 1px;
+  border-radius: 1px / 1px;
 }
-/* line 66, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 .appt li {
   max-width: 17em;
   margin: 0.25em auto;
@@ -241,39 +239,62 @@ a {
   -moz-border-radius: 2px / 3px;
   border-radius: 2px / 3px;
 }
-/* line 78, ../sass/_base.scss */
+/* line 83, ../sass/_base.scss */
 .appt li.completed {
   color: red;
   text-decoration: line-through;
 }
-/* line 82, ../sass/_base.scss */
+/* line 87, ../sass/_base.scss */
 .appt a.remove {
   color: red;
   margin-left: 10px;
   display: none;
 }
-/* line 87, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 .appt li:hover a.remove {
   display: inline;
 }
 
-/* line 91, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .splash {
   margin: 0 auto;
   text-align: center;
   font-family: 'Raleway';
   font-weight: 300;
 }
-/* line 96, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
 .splash a {
   font-size: 2.5em;
 }
 
-/* line 99, ../sass/_base.scss */
+/* line 104, ../sass/_base.scss */
 h1 {
   font-size: 4.5em;
   font-weight: 700;
   text-shadow: 3px 3px 5px #95a5a6;
+}
+
+/* line 113, ../sass/_base.scss */
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 118, ../sass/_base.scss */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.7em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 128, ../sass/_base.scss */
+.setting-icon {
+  padding: .15em;
+  font-size: 2.1em;
+  float: right;
 }
 
 /*
@@ -283,12 +304,12 @@ h1 {
 nav#slide-menu {
   position: fixed;
   top: 0;
-  left: -200px;
+  left: -12.5em;
   bottom: 0;
   display: block;
   float: left;
   width: 100%;
-  max-width: 220px;
+  max-width: 13.75em;
   height: 100%;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -297,7 +318,7 @@ nav#slide-menu {
 /* line 19, ../sass/_state.scss */
 nav#slide-menu > ul {
   display: block;
-  margin: 30px;
+  margin: 1.875em;
   padding: 0;
   list-style: none;
   -webkit-transition: all 300ms;
@@ -309,26 +330,26 @@ nav#slide-menu > ul li {
   color: #dfe5eb;
   padding: .5em 0;
   cursor: pointer;
-  opacity: .2;
+  opacity: .8;
 }
 /* line 33, ../sass/_state.scss */
 nav#slide-menu > ul li:hover {
   color: #59e9df;
   opacity: 1;
 }
-/* line 37, ../sass/_state.scss */
+/* line 38, ../sass/_state.scss */
 nav#slide-menu > ul li.sep {
   margin-top: 7px;
   padding-top: 14px;
   border-top: 1px solid #6b7b8d;
 }
 
-/* line 45, ../sass/_state.scss */
+/* line 46, ../sass/_state.scss */
 .menu-active nav#slide-menu {
   left: 0px;
 }
 
-/* line 46, ../sass/_state.scss */
+/* line 47, ../sass/_state.scss */
 .menu-active nav#slide-menu ul {
   left: 0px;
   opacity: 1;
@@ -337,14 +358,14 @@ nav#slide-menu > ul li.sep {
 /*
   Content
 */
-/* line 52, ../sass/_state.scss */
+/* line 53, ../sass/_state.scss */
 div#content {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 60px;
+  padding: 3.75em;
   overflow: scroll;
   background: #fcfeff;
   -webkit-box-shadow: -3px 0 6px #4a5562;
@@ -354,26 +375,27 @@ div#content {
   -moz-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 69, ../sass/_state.scss */
+/* line 70, ../sass/_state.scss */
 div#content div.menu-trigger {
   position: fixed;
   top: 10px;
   left: 10px;
-  width: 36px;
-  height: 36px;
+  width: 2.25em;
+  height: 2.25em;
+  z-index: 100;
   cursor: pointer;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms;
 }
 
-/* line 82, ../sass/_state.scss */
+/* line 84, ../sass/_state.scss */
 .menu-active div#content {
-  left: 264px;
+  left: 16.5em;
   border-radius: 1px 0 0 7px;
 }
 
-/* line 84, ../sass/_state.scss */
+/* line 86, ../sass/_state.scss */
 .menu-active div#content .menu-trigger {
-  left: 294px;
+  left: 18.375em;
 }

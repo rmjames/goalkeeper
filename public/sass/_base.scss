@@ -42,14 +42,19 @@ a {
           }
 
 .container {
-	       @include container;
 	       width: 100%;
 	       margin: 0 auto;
 	        }
 
+.card {
+	margin: 0 auto;	
+	width: 100%;
+	min-width: 7em;
+	max-width: 22em;
+	background-color: #cccccc;
+}
+
 .weather {
-         //margin-top: .35em;
-         //background: $blue;
          z-index: 9999;
          @include border-radius(1px, 1px);
          @include single-box-shadow;
@@ -60,12 +65,12 @@ a {
       padding-top: 1em; 
       max-width: 20em;
       //background: $blue;
-      @inclusde border-radius(1px, 1px);
+      @include border-radius(1px, 1px);
       //@include single-box-shadow; 
 
 	  li{
 	      //float: left;
-          max-width: 17em;
+        max-width: 17em;
 	      margin: 0.25em auto;
 	      padding: 1.3em 2em 1.3em 2em;
 	      background: $grey;
@@ -101,7 +106,28 @@ h1{
 	font-weight:700;
 	text-shadow: 3px 3px 5px rgba(149, 165, 166,1.0);}		
 
+audio{
+			@extend .card;
+}
 
+.map{
+	height: 100%;
+	width: 100%;
+	}
 
+.menu{
+	position:absolute;
+	top: 0;
+	left: 0;
+	height: 2.7em;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .4);
 
+}
+
+.setting-icon{
+	padding: .15em;
+	font-size: 2.1em;
+	float: right;
+}
 

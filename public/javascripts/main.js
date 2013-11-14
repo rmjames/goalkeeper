@@ -1,3 +1,7 @@
+/*
+  Input Form 
+*/
+
 $('inputText').on('click',function(){
   $('inputText').datepicker();
 });
@@ -30,12 +34,10 @@ $('#list').on('click', 'a.remove', function(){
   $(this).parent().remove();
 });
 
-//$('#result').load('ajax/test.html #container');
-
-
 /*
   Slidemenu
 */
+
 (function() {
 	var body = document.body
 	, menu_trigger = body.getElementsByClassName('menu-trigger')[0];

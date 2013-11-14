@@ -15,7 +15,7 @@ input[type=submit] {
   }
 
 input {
-	   height: 2.5;
+	   height: 2.5em;
 	   padding: .8em;
      width: 100%;
 	   @include border-radius(1px, 1px);
