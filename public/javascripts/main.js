@@ -49,3 +49,11 @@ $('#list').on('click', 'a.remove', function(){
 	}
 
 }).call(this);
+
+/*
+menu
+*/
+
+$('.setting-icon').click(function(){
+  $('.sub-menu').slideToggle();
+});
