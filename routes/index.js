@@ -16,4 +16,10 @@ module.exports= function(app){
 			app.get('/settings', function(req,res){
 				res.render('settings')
 			});
+			app.get('/profile', function(req,res){
+				res.render('profile')
+			});
+			app.get('/security', function(req,res){
+				res.render('security')
+			});
 		}

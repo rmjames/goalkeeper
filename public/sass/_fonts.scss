@@ -40,4 +40,15 @@ html {font-family: source-sans-pro, helvetica, serif;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-$text-shadow: .2px .2px .05px #000;
+$text-shadow: 1px 1px 3px #000;
+
+h1, h2, h3 {color: #FF6B6B; 
+						margin: .5em 0 1em;
+						}
+
+h2{
+	color: lighten(#eb1010, 10%);
+	font-size: 4em;
+	font-weight: 500;
+	text-shadow: $text-shadow;
+}

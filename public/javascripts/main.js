@@ -55,5 +55,5 @@ menu
 */
 
 $('.setting-icon').click(function(){
-  $('.sub-menu').slideToggle();
+  $('.sub-menu').fadeToggle();
 });
