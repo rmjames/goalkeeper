@@ -1,7 +1,8 @@
 
 var express = require('express')
      , http = require('http')
-     , path = require('path');
+     , path = require('path')
+ , Forecast = require('forecast.io');
 
 var app = express()
 , routes = require('./routes')(app);
@@ -18,12 +19,16 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
+/* development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+  app.use(express.errorHandler();
+}*/
 
-/*var forecast = new Forecast({
+/*
+var options = {
+  APIKey: process.env.FORECAST_API_KEY
+}
+, forecast = new Forecast({
     service: 'forecast.io'
   , key: 'adeacb50ac56539da9a5c4d5f7cf602a'
   , units: 'celcius' // Only the first letter is parsed so you can type Fahrenheit, Celcius, centigrade, FahrenPoop, etc.
@@ -37,7 +42,8 @@ if ('development' == app.get('env')) {
 forecast.get([-33.8683, 151.2086], function(err, weather) {
   if(err) console.dir(err);
   else console.dir(weather);
-});*/
+});
+*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
