@@ -26,7 +26,6 @@ nav#slide-menu {
 						transition: all 300ms;
 
 		li {
-			//text-shadow: $text-shadow-menu;
 			color: #dfe5eb;
 			padding: .5em 0;
 			cursor: pointer;}
@@ -46,6 +45,7 @@ nav#slide-menu {
 
 
 div#content {
+	//@include span-columns(2,12);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -56,13 +56,15 @@ div#content {
 	background: #fcfeff;
 	//border-radius: 1;
 	-webkit-box-shadow: -3px 0 6px darken(#556270, 5%);
-		 -moz-box-shadow: -3px 0 6px darken(#556270, 5%);
-					box-shadow: -3px 0 6px darken(#556270, 5%);
+		moz-box-shadow: -3px 0 6px darken(#556270, 5%);
+			box-shadow: -3px 0 6px darken(#556270, 5%);
 	-webkit-transition: all 300ms;
-		 -moz-transition: all 300ms;
-					transition: all 300ms;
+		moz-transition: all 300ms;
+			transition: all 300ms;
         
 	div.menu-trigger {
+		//@include span-columns(1,12);
+		//@include float-left;
 		position: fixed;
 		top: .625em;//adjust from 10px
 		left: .625em;//adjust from 10px
@@ -72,7 +74,7 @@ div#content {
 		cursor: pointer;
 		-webkit-transition: all 300ms;
 		   -moz-transition: all 300ms;
-						transition: all 300ms;
+				transition: all 300ms;
 	}
 } 
 

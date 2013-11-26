@@ -19,7 +19,7 @@
     right: 0;
     width: 5.5em; 
     text-align: center;
-    background-color: rgba(0, 0, 0, .03);}
+    background-color: $header-menu-color}
   li{
     width: 100%;
     position: relative;
@@ -34,7 +34,7 @@
 
 .settings-nav{
 		position: fixed;
-		top: .625em;//adjust from 10px
+		top: .0125em;//adjust from 10px
 		right: .625em;//adjust from 10px
-		font-size: .19em;
+		font-size: .6em;
 	}
