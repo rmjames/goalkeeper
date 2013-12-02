@@ -54,6 +54,6 @@ $('#list').on('click', 'a.remove', function(){
 menu
 */
 
-$('.setting-icon').click(function(){
+$('.setting-icon').on('click', function(){
   $('.sub-menu').fadeToggle();
 });
