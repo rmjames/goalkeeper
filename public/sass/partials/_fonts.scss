@@ -1,0 +1,71 @@
+html {font-family: source-sans-pro, helvetica, serif;
+			font-weight: 300;
+			font-size: 100%;
+			line-height: 1.5em;
+			}
+			
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,700);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: 12px;
+	text-align: center;
+	font-variant: normal;
+	font-size: .95em;
+	text-transform: none;
+	line-height: 1em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+$text-shadow: 1px 1px 3px #000;
+$text-shadow-menu: 0px 0px -1px #ecf0f1;
+
+h1 {
+		font-size: 3em;//font-size: 4.5em;
+		line-height: 1.5em;
+		font-weight:700;
+		text-shadow: 3px 3px 5px rgba(149, 165, 166,1.0);
+		}
+
+h2 {
+		font-size: 2.25em;//font-size: 4em;
+		line-height: 1.333em;
+		font-weight: 500;
+		text-shadow: $text-shadow;
+		}
+
+h1, h2 {color: lighten(#eb1010, 10%);
+						//margin: .5em 0 1em;
+						}
+
+h1{
+	
+	
+	}		
+	
+h2{
+	
+}
